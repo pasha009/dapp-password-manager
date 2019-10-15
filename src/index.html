@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Password Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" target="_blank">Password Manager</a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap d-none d-sm-none d-sm-block">
+          <small><span id="account"></span></small>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <main role="main" class="col-lg-12 d-flex justify-content-center">
+
+          <div id="loader" class="text-center">
+            <p class="text-center">
+              Loading...
+              Confirm transaction on Metamask
+            </p>
+          </div>
+          <div id="content">
+            <div id="login-form">
+            </div>
+            <div id="signup-form">
+            </div>
+            <div id="add-password">
+            </div>
+            <div id="password-list">
+            </div>
+            <div id="modal-mine">
+            </div>
+          </div>
+
+        </main>
+        <div class="divider" />
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/handlebars.min.js"></script>
+    <script src="js/compiled.js"></script>
+    <script src="js/crypto-js.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+  </body>
+</html>

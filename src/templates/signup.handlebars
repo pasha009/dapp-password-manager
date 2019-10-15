@@ -1,0 +1,21 @@
+<form action="#" oninput='confirm_password.setCustomValidity(confirm_password.value != password.value ? "Passwords do not match." : "")'>
+		<h3>Create Account</h3>
+		<p>No account associated with given key.</p>
+		<hr>
+      <div class="form-group">
+			<label>Username</label>
+        	<input id="signup-name" type="text" class="form-control" name="Username" required="required">
+      </div>
+			<div class="form-group">
+				<label>Master Password</label>
+	        <input id="signup-password" data-toggle="password" type="password" class="form-control" name="password" required="required">
+	    </div>
+			<div class="form-group">
+				<label>Confirm Master Password</label>
+	        <input id="signup-password-conf" data-toggle="password" type="password" class="form-control" name="confirm_password" required="required">
+	    </div>
+			<div class="form-group">
+	        <button id="signup-button" class="btn btn-primary btn-block btn-lg">Create Account</button>
+	    </div>
+    </form>
+	<div class="text-center"> Master Password is not recoverable.</div>

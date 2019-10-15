@@ -1,0 +1,42 @@
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">#{{number}} {{title}}</h5>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">{{password}}</div>
+        <div class="divider"/>
+  			<div class="form-group">
+  				<label>Master Password</label>
+  	        <input id="modal-master" type="password" class="form-control" name="master_password" required="required">
+  	    </div>
+
+        <div id="new-title" class="form-group">
+        <label>New Password Title</label>
+            <input id="new-pass-title" type="text" class="form-control" name="title">
+        </div>
+        <div id="new-pass" class="form-group">
+          <label>New Password</label>
+            <input id="new-pass-password" type="password" class="form-control" name="password">
+        </div>
+        <div class="divider"/>
+        <div class="form-group">
+  	      <button id="modal-decrypt" class="btn btn-primary">Show Password</button>
+  	    </div>
+
+        <div id="pass-decrypt" class="text-center"></div>
+        <div id="delete-warning" class="alert alert-danger text-center" role="alert">
+           Delete is irreversible. Are you Sure ?
+        </div>
+      </div>
+      <div class="modal-footer">
+
+        <button id="delete-pass-button" type="button" class="btn btn-danger">Delete Password</button>
+        <button id="change-pass-button" type="button" class="btn btn-info" >Change Password</button>
+        <div class="divider" />
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
