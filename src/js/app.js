@@ -110,7 +110,7 @@ App = {
     App.hideAll()
     $("#login-form").show()
     $("#login-form").html(loginTem)
-    $("#login-button").click(App.loginUser)
+    $("#login-button").click((e) => App.loginUser(e))
   },
 
   signupUserView: () => {
@@ -121,8 +121,9 @@ App = {
     $("#signup-button").click((e) => App.signupUser(e))
   },
 
-  loginUser: async () => {
+  loginUser: async (e) => {
     App.setLoading(true)
+    e.preventDefault()
     const pass = $('#login-password').val()
 
     if (CryptoJS.SHA256(pass).toString() == App.checkHash) {
